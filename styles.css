@@ -40,7 +40,7 @@ img {
 }
 
 .text-primary {
-  color: #3b7bf7;
+  color: #7baad1;
 }
 
 .text-center {
@@ -48,7 +48,7 @@ img {
 }
 
 .border-bottom-heading {
-  border-bottom: 3px solid #3b7bf7;
+  border-bottom: 3px solid #7baad1;
   width: 250px;
   margin: 10px auto 30px auto;
 }
@@ -115,7 +115,7 @@ img {
 }
 
 #nav-bar #nav-link-container li:hover {
-  border-bottom-color: #3b7bf7;
+  border-bottom-color: #7baad1;
 }
 
 /* Grey backround */
@@ -232,7 +232,7 @@ img {
 
 /* Get started section */
 #get_started {
-  background: #3b7bf7;
+  background: #7baad1;
   margin-top: 1rem;
 }
 #get_started input[type="email"] {
@@ -255,7 +255,6 @@ img {
 }
 
 @media(max-width:768px){
-/* Utility Classes */
 .l-heading {
   font-size: 3rem;
 }
@@ -276,12 +275,12 @@ img {
   justify-content: center;
 }
 
-/* Links container */
+/* Links  */
 #nav-link-container {
   flex-direction: row;
 }
 
-/* Embeded video size */
+/*  video size */
 #hiw #video {
   width: 440px;
   height: 260px;
@@ -293,7 +292,7 @@ img {
   margin: -100px 0 0;
 }
 
-/* Testimonial container */
+/* samples container */
 #testimonials #testimonial-container {
   display: block;
 }
@@ -323,19 +322,17 @@ img {
 height:auto;  
   }
 
-  /* On Adding top value for main content - all the other content below content were not aligned properly. */
-  /* So I added top value for all other section as well */
   /* Main content  */
   #main-content #main-info {
     top: 160px;
   }
 
-  /* How it works */
+  /* How */
   #hiw {
     top: 12rem;
   }
 
-  /* Embeded video size */
+  /*  video size */
   #hiw #video {
     width: 240px;
     height: 160px;
@@ -347,7 +344,7 @@ height:auto;
     margin: -200px 0 0;
   }
 
-  /* Testimonials */
+  /* samples */
   #testimonials {
     position: relative;
     top: 10rem;
