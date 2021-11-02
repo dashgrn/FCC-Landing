@@ -1,0 +1,377 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+a:link,
+a:visited {
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  max-width: 1100px;
+  overflow: hidden;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.text-primary {
+  color: #3b7bf7;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.border-bottom-heading {
+  border-bottom: 3px solid #3b7bf7;
+  width: 250px;
+  margin: 10px auto 30px auto;
+}
+
+.l-heading {
+  font-size: 4rem;
+  text-transform: capitalize;
+}
+
+.m-heading {
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.text-size {
+  font-size: 1rem;
+  text-transform: capitalize;
+  margin-top: 1rem;
+}
+
+/* Flex-container */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 2;
+  background: #fff;
+}
+
+#header #logo {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+#nav-link-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Image responsive */
+#header #header-img {
+  max-width: 50px;
+  height: 50px;
+  display: block;
+}
+
+#nav-bar {
+  margin: 10px;
+}
+#nav-bar .nav-link {
+  margin: 0 0.5rem;
+}
+
+#nav-bar #nav-link-container li {
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 2px solid transparent;
+  transition: border 0.3s ease;
+}
+
+#nav-bar #nav-link-container li:hover {
+  border-bottom-color: #3b7bf7;
+}
+
+/* Grey backround */
+#main-content #main-info::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+/* Main content */
+#main-content #main-info {
+  position: relative;
+  top: 30px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background: url(https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80) no-repeat center
+    center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  z-index: 1;
+}
+
+/* #main-content #main-info h1 {
+  font-size: 4rem;
+  text-transform: capitalize;
+} */
+
+#main-content #main-info p {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  margin-top: 1rem;
+}
+
+/* How it works section */
+#hiw:before {
+    display: block;
+    content: "";
+    background:green;
+    border: 5px solid yellow;
+    height: 50px;
+    margin: -50px 0 0;
+}
+
+#hiw {
+  position: relative;
+  top: 2rem;
+  margin: auto;
+}
+/* Video */
+#hiw #video {
+  margin: 1rem;
+  width: 640px;
+  height: 360px;
+  border: none;
+}
+
+/* Testimonial section */
+#testimonials:before {
+    display: block;
+    content: "";
+    height: 50px;
+    margin: -50px 0 0;
+}
+
+#testimonials #testimonial-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#testimonials .testimonial-customer {
+  flex: 1;
+}
+#testimonials .testimonial-customer .circular-image{
+  display: inline-block;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  margin-top:20px;
+  border-radius:50%;
+}
+
+#testimonials .testimonial-customer img {
+ width: 100px;
+}
+
+/* This is to center the women in the first testimonial image */
+#testimonials #center-first-image {
+ margin-top:-20px;
+}  
+
+/* This is to center the women inthe last testimonial image */
+#testimonials #center-third-image {
+ margin-top:-40px;
+}
+
+#testimonials .testimonial-customer p {
+  margin-top: 1rem;
+}
+
+/* Get started section */
+#get_started {
+  background: #3b7bf7;
+  margin-top: 1rem;
+}
+#get_started input[type="email"] {
+  padding: 0.8rem 1rem;
+  margin-top: 2rem;
+  border: none;
+  border-radius: 25px;
+  min-width: 35%;
+}
+#get_started input[type="submit"] {
+  display: block;
+  padding: 0.5rem 1rem;
+  margin: 2rem auto;
+  border: none;
+  color: #fff;
+  background: #333;
+  border-radius: 25px;
+  min-width: 15%;
+  cursor: pointer;
+}
+
+@media(max-width:768px){
+/* Utility Classes */
+.l-heading {
+  font-size: 3rem;
+}
+.m-heading {
+  font-size: 1.5rem;
+}
+
+.text-size {
+  font-size: 1rem;
+}
+  
+/* Header */
+#header {
+  display: block;
+}
+
+#header #logo {
+  justify-content: center;
+}
+
+/* Links container */
+#nav-link-container {
+  flex-direction: row;
+}
+
+/* Embeded video size */
+#hiw #video {
+  width: 440px;
+  height: 260px;
+}
+#hiw:before {
+  display: block;
+  content: "";
+  height: 100px;
+  margin: -100px 0 0;
+}
+
+/* Testimonial container */
+#testimonials #testimonial-container {
+  display: block;
+}
+}
+
+/* Device width <=512 */
+@media(max-width:512px) {
+  /* Utility classes */
+  .l-heading {
+    font-size: 2.5rem;
+  }
+  .m-heading {
+    font-size: 1.2rem;
+  }
+
+  .text-size {
+    font-size: 1rem;
+  }
+  /* Link container */
+  #nav-link-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+#main-content #main-info{
+  width:auto;  
+height:auto;  
+  }
+
+  /* On Adding top value for main content - all the other content below content were not aligned properly. */
+  /* So I added top value for all other section as well */
+  /* Main content  */
+  #main-content #main-info {
+    top: 160px;
+  }
+
+  /* How it works */
+  #hiw {
+    top: 12rem;
+  }
+
+  /* Embeded video size */
+  #hiw #video {
+    width: 240px;
+    height: 160px;
+  }
+#hiw:before {
+    display: block;
+    content: "";
+    height: 200px;
+    margin: -200px 0 0;
+  }
+
+  /* Testimonials */
+  #testimonials {
+    position: relative;
+    top: 10rem;
+  }
+
+#testimonials:before {
+    display: block;
+    content: "";
+    height: 200px;
+    margin: -200px 0 0;
+  }
+
+  #get_started {
+    position: relative;
+    top: 10rem;
+  }
+}
+/* Device width <=280 */
+@media(max-width:280px) {
+  /* Embeded video size */
+  #hiw #video {
+    width: 140px;
+    height: 60px;
+  }
+}
+
+
